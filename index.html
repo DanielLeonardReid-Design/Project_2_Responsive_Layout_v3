@@ -4,90 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <title>Team Treehouse Project 2: Responsive Layout</title>
-    <meta name="description" content="DESCRIPTION">
     <meta name="viewport" content="width-device-width, initial-scale-1">
     <link rel="stylesheet" href="css/styles.css">
+   
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
-
 </head>
 
-<body>
-<h1 id="top" class="title">Daniel L. Reid</h1>
-<ul>
-<li><a href="#top"></a>HOME</li>
-<li><a href="#portfolio"></a>PORTFOLIO</li>
-<li><a href="#contact"></a>CONTACT</li>
 
+<body>
+<header>
+    <div>
+<h1>Daniel L. Reid</h1>
+<nav>
+<ul>
+<li class="home"><a href="index.html" target="_black" style="text-decoration: none;"></a>HOME</li>
+<li class="portfolio"><a href="#portfolio" style="text-decoration: none;"></a>PORTFOLIO</li>
+<li class="contact"><a href="#contact" style="text-decoration: none;"></a>CONTACT</li>
 </ul>
 
-<img src="images/responsive-layout-profile.png">
+</nav>
+<img class="resize" src="images/responsive-layout-profile.png">
 
-<p>
+<p class="intro">
     Hi! I'm a front-end developer who loves responsive design and css.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!  Here are some of the projects that I built.
 </p>
+</div>
 
-<div class="portfolio-container">
+<div class="clear">
+</div>
+</header>
+<h5 class="port" id="portfolio">PORTFOLIO</h5>
 
-<h2 id ="portfolio">PORTFOLIO</h2>
-
-<div>
+<div class="container">
+   <div class="col">
     <img src="images/portfolio-1.png" alt="portfolio pic 1"/>
 <h3>MARKETING PAGE</h3>
 <p>This project shows the front page of a marketing website meant for a specific business I'm interested in</p>
 
 </div>
 
-<div>
-    <img src="images/portfolio-2.png" alt="portfolio pic 1"/>
+<div class="col searchphoto">
+    <img src="images/portfolio-2.png" alt="portfolio pic 2"/>
 <h3>SEARCH PAGE</h3>
 <p>This project searches through a specific database to find information that the user is trying to look up.</p>
 
 </div>
 
-<div>
-    <img src="images/portfolio-3.png" alt="portfolio pic 1"/>
+<div class="col travelcalc">
+    <img src="images/portfolio-3.png" alt="portfolio pic 3"/>
 <h3>TRAVEL APP</h3>
 <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
 
 </div>
 
-<div>
-    <img src="images/portfolio-4.png" alt="portfolio pic 1"/>
+<div class="col">
+    <img src="images/portfolio-4.png" alt="portfolio pic 4"/>
 <h3>MAP OF FAVORITE SPOTS</h3>
 <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour. </p>
 
 </div>
 
-<div>
-    <img src="images/portfolio-5.png" alt="portfolio pic 1"/>
+<div class="col searchohoto">
+    <img src="images/portfolio-5.png" alt="portfolio pic 5"/>
 <h3>PHOTO GALLERY</h3>
 <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
 
 </div>
 
-<div>
-    <img src="images/portfolio-6.png" alt="portfolio pic 1"/>
+<div class="col travelcalc">
+    <img src="images/portfolio-6.png" alt="portfolio pic 6"/>
 <h3>CALCULATOR</h3>
 <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+<br>
+<br>
 
+<br>
 </div>
 </div>
+<footer class="main-footer">
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
 
-<div class="contact-container" id="contact">
-    <h2>Contact</h2>
-    <p>If you're interested in chatting or want more information about what I've been working on. I'd love to hear from you!</p>
-    <p>Phone <a href="#" class="contact-info"> 1 (978) 500-0583</a></p>
-    <p>Email <a href="#" class="contact-info">Danreid153@protonmail.com</a></p>
+<h3 class="contact" id="contact-info">CONTACT</h3>
+    <p class="bp">If you're interested in chatting or want more information about what I've been working on. I'd love to hear from you!</p>
+    <br>
+    <br>
 
-</div>
+    <p class="bottomone">Phone <strong>1 (978) 500-0583</strong></p>
+    <p class="bottomtwo">Email <strong>Danreid153@protonmail.com</strong></p>
+<br>
+<br>
+<br>
+<br>
+<hr>
 
-<footer>
-    <p class="name">
+    <h4 class="name">
         Daniel L. Reid
     </p>
-    <a class="top" href="#top">
+    <h4 class="back"><a href="#myhead" style="text-decoration: none;">
     BACK TO TOP
     </a>
+    </h4>
+<div class="containertwo">
+        <ul>
+            <li class="portfoliobottom"><a href="#portfolio" style="text-decoration: none;">PORTFOLIO </a></li>
+            <li class="homebottom"><a href="index.html" target="_blank" style="text-decoration: none;">HOME </a></li>
+            <li class="contactbottom"><a href="#contact" style="text-decoration: none;">CONTACT </a></li>
+        </ul>
+
+</div>
+</div>
+
 
 </footer>
 </body>
