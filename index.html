@@ -2,76 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Team Treehouse Project 2: Responsive Layout</title>
-    <meta name="viewport" content="width-device-width, initial-scale-1">
     <link rel="stylesheet" href="css/styles.css">
-   
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
-<header>
-    <div>
-<h1>Daniel L. Reid</h1>
-<nav>
-<ul>
-<li class="home"><a href="index.html" target="_black" style="text-decoration: none;"></a>HOME</li>
-<li class="portfolio"><a href="#portfolio" style="text-decoration: none;"></a>PORTFOLIO</li>
-<li class="contact"><a href="#contact" style="text-decoration: none;"></a>CONTACT</li>
-</ul>
 
-</nav>
-<img class="resize" src="images/responsive-layout-profile.png">
+    
+<div>
+    <header class="main-header">
+        <div>
+    <h1 class="name">Daniel L. Reid</h1>
+        <nav>
+            <ul>
+            <li class="nav-item"><a href="#">HOME</a></li>
+            <li class="nav-item"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="nav-item"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
 
-<p class="intro">
+</div>
+
+<div id="intro" class="container">
+<img src="images/responsive-layout-profile.png" alt="profile picture" class="intro-item profile-image">
+
+<p>
     Hi! I'm a front-end developer who loves responsive design and css.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!  Here are some of the projects that I built.
 </p>
 </div>
-
-<div class="clear">
-</div>
 </header>
-<h5 class="port" id="portfolio">PORTFOLIO</h5>
+
+
+<main>
+
+    <section id="portfolio" class="container">
+
+<h2>PORTFOLIO</h2>
 
 <div class="container">
-   <div class="col">
+   <div class="project">
     <img src="images/portfolio-1.png" alt="portfolio pic 1"/>
+
 <h3>MARKETING PAGE</h3>
 <p>This project shows the front page of a marketing website meant for a specific business I'm interested in</p>
 
 </div>
 
-<div class="col searchphoto">
+<div class="project">
     <img src="images/portfolio-2.png" alt="portfolio pic 2"/>
 <h3>SEARCH PAGE</h3>
 <p>This project searches through a specific database to find information that the user is trying to look up.</p>
 
 </div>
 
-<div class="col travelcalc">
+<div class="project">
     <img src="images/portfolio-3.png" alt="portfolio pic 3"/>
 <h3>TRAVEL APP</h3>
 <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
 
 </div>
 
-<div class="col">
+<div class="project">
     <img src="images/portfolio-4.png" alt="portfolio pic 4"/>
 <h3>MAP OF FAVORITE SPOTS</h3>
 <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour. </p>
 
 </div>
 
-<div class="col searchohoto">
+<div class="project">
     <img src="images/portfolio-5.png" alt="portfolio pic 5"/>
 <h3>PHOTO GALLERY</h3>
 <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
 
 </div>
 
-<div class="col travelcalc">
+<div class="project">
     <img src="images/portfolio-6.png" alt="portfolio pic 6"/>
 <h3>CALCULATOR</h3>
 <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
@@ -81,48 +91,46 @@
 <br>
 </div>
 </div>
-<footer class="main-footer">
-    <div>
+</section>
+</main>
+
+<footer>
+
         <br>
         <br>
         <br>
         <br>
 
-<h3 class="contact" id="contact-info">CONTACT</h3>
-    <p class="bp">If you're interested in chatting or want more information about what I've been working on. I'd love to hear from you!</p>
+<section id="contact-info" class="container">
+    <h3>CONTACT</h3>
+
+    <p class="contact-invite">If you're interested in chatting or want more information about what I've been working on. I'd love to hear from you!</p>
     <br>
-    <br>
 
-    <p class="bottomone">Phone <strong>1 (978) 500-0583</strong></p>
-    <p class="bottomtwo">Email <strong>Danreid153@protonmail.com</strong></p>
-<br>
-<br>
-<br>
-<br>
-<hr>
-
-    <h4 class="name">
-        Daniel L. Reid
-    </p>
-    <h4 class="back"><a href="#myhead" style="text-decoration: none;">
-    BACK TO TOP
-    </a>
-    </h4>
-<div class="containertwo">
-        <ul>
-            <li class="portfoliobottom"><a href="#portfolio" style="text-decoration: none;">PORTFOLIO </a></li>
-            <li class="homebottom"><a href="index.html" target="_blank" style="text-decoration: none;">HOME </a></li>
-            <li class="contactbottom"><a href="#contact" style="text-decoration: none;">CONTACT </a></li>
-        </ul>
-
-</div>
-</div>
+    <p><u>Phone:</u><span><strong> 1.978.500.0583</strong></span></p>
+    <p><u>Email:</u><span><strong>  Danreid153@protonmail.com</strong></span></p>
+</section>
 
 
-</footer>
-</body>
 
-</html>
+
+        <h6 class="nametwo">Daniel L. Reid</h6>
+
+        <h6 class="to-top"><a href="#">BACK TO TOP</a></h6>
+
+    <div class="secondarynav">
+         <ul>
+            <li class="bottomhome"><a href="#" style="text-decoration: none;">HOME</a></li>
+            <li class="bottomportfolio"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="bottomcontact"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+    
+     </footer>
+ </div>
+ </body>
+ </html>
+
 
 
 

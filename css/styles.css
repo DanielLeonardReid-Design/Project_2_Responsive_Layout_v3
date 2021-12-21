@@ -1,34 +1,57 @@
 * {
+    box-sizing: border-box;
+}
+
+body {
  text-align: center;
  font-family: 'Source Sans Pro', sans-serif;
  color: rgb(42, 42, 42);
- box-sizing: border-box;
  padding: 0;
  margin: 0;
 }
 
-body {
-    text-align: center;
-    padding: 5%;
+li.nav-item,
+#bottom-nav {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.15rem 0;
 }
 
 img {
-    padding-right: .25em;
+    padding-right: 2em;
+    padding-left: 2em;
     width: 100%;
 }
+
+h1,
+h2, 
+h3, 
+li.nav-item {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
 p {
     padding-left: 1.5em;
     padding-right: 1em;
     color: rgb( 122, 122, 122);
     font-size: 12px;
 }
+.profile {
+    justify-content: center;
+    align-items: center;
+    color: rgb(52, 55, 59);
+    flex-direction: column;
+    display: flex;
+}
 
 h2 {
     font-weight: 800;
-    list-style: none;
     text-transform: uppercase;
-    padding: 20px;
-    font-size: 17px;
+    font-weight: 600;
+    padding: 2rem;
+    font-size: 1.1rem;
+    width: 100%;
 }
 
 h3 {
@@ -41,14 +64,37 @@ h4{
 h5 {
     padding: 2em 0 1em 0;
 }
-.main-footer {
+h6 {
+    font-size: 12px;
+    color: rgb(118, 118, 119)
+}
+
+
+
+
+.footer-one {
     background: rgb(242, 242, 242)
     text-align: center;
     overflow: hidden;
 }
 
+ul.footer-nav {
+    display: none;
+}
+
 ul {
 padding-left: 0;
+}
+ul.header-nav,
+.container {
+    flex-direction: column;
+    
+}
+
+#bottom-nav {
+    justify-content: space-between;
+    margin: 0.5rem 1rem;
+    flex-direction: row;
 }
 
 header {
@@ -56,30 +102,50 @@ header {
     padding: 1.5em;
 }
 .bp {
-    padding: 1.5em 0 1 0;
-    margin-left: 2em;
+
     width: 20em;
     font-size: 12px;
+    text-align: center;
 }
 #top {
     text-transform: uppercase;
 }
 
-.top {
-    margin: 18px 0;
+a {
+    color: inherit;
 }
-.homebottom {
+.to-top {
+float: right;
+}
+
+body,
+#portfolio
+#skills
+#intro
+ul.header-nav,
+li.nav-item,
+#bottom-nav
+ {
+    justify-content: center;
+    display: flex;
+}
+
+
+.bottomhome {
     display: none;
 }
-.contactbottom {
+.bottomcontact {
     display: none;
 }
-.portfoliobottom {
+.bottomportfolio {
     display: none;
 }
 a {
     text-decoration: none;
     color: inherit;
+}
+#portfolio {
+    border-bottom: 1px dashed #bbb;
 }
 .col {
     min-height: 250px;
@@ -88,6 +154,19 @@ a {
     padding-top: 6px;
     letter-spacing: 1.5px;
 }
+
+.to-top {
+    padding-right: 2em;
+    color: black;
+    padding-bottom: 2em;
+    float: right;
+}
+.nametwo {
+    padding-bottom: 2em;
+    color: black;
+    padding-left: 2em;
+}
+
 a:hover {
     text-decoration: underline;
     color: orange;
@@ -123,13 +202,21 @@ a:hover {
 
 }
 
-.contact {
+.contact-info {
     font-weight: 650;
     background-color: white;
     padding: 1em;
     text-align: center;
     margin: .25em 0em .25em 0em;
     font-weight: bold;
+}
+
+.contact-invite {
+    text-align: center;
+}
+
+#intro {
+    margin: 0;
 }
 
 .main-footer {
@@ -145,15 +232,17 @@ a:hover {
     float: right;
     color: black;
 }
+
 .name {
-    padding: 0 0 1.5em 1.2em;
-    float: left;
+    font-size: 36px;
     color: black;
 }
+
 .bottomone {
     padding-bottom: 2em;
     font-size: 12px;
 }
+
 .bottomtwo {
     font-size: 12px;
 }
@@ -167,8 +256,8 @@ a:hover {
     padding-top: 1.5em;
     padding-bottom: 1em;
     width: 18em;
-    padding-left: 0;
     font-size: 14px;
+    text-align: center;
 }
 hr {
     background-color: #ccc;
@@ -176,116 +265,222 @@ hr {
     margin: 1em;
     height: 1px;
 }
+#contact {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ddd
+}
+.nametwo {
+    float: left;
+    color: black;
+}
+
 /*===========================================
 Media Queries
 =============================================*/
 
 @media (min-width) {min-width: 768px) {
-. container {
+.container {
     display: flex;
     flex-wrap: wrap;
 }
-.col {
-    flex-basis: calc(50% - 20px);
+
+.ul {
+    flex-direction: row-reverse;
 }
+.nav {
+    flex-direction: row-reverse;
+}
+li.nav-item {
+    flex-direction: row-reverse;
+}
+
+ul
+.main-nav {
+    font-size: 16px;
+}
+
+
+.nav,
+ {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1em;
+}
+    
+}
+
+.nav-item, {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.15rem 0;
+
+img {
+    padding-right: 2em;
+    padding-left: 2em;
+    width: 100%;
+}
+
+.col {
+    flex-basis: calc(50% 20px);
+}
+
 resize {
     padding-top: 3.5em;
-    float: right;
     width: 40%;
 }
+
 h1 {
     padding-top: 1em;
     padding-bottom: 1em;
-    font-size: 26px;
+    font-size: 36px;
 }
-.home .portfolio .contact {
-    display: inline;
+
+#home 
+#portfolio
+#contact {
+    display: list-item;
     background-color: transparent;
-}
+} 
+
 .clear {
     clear: both;
 }
+
 .intro {
-    font-size: 16px;
-    text-align: left;
+    font-size: 20px;
     padding-top: 3em;
     padding-bottom: 6em;
     width: 26em;
 }
+
 .contacts {
     font-size: 14px;
 }
+
+
 .bp {
-    font-size: 18px;
-    margin-left: 4.25em;
+    font-size: 14px;
     padding-bottom: 1em;
-    width: 28em;
+    text-align: center;
+    
 }
-.containertwo {
+.secondarynav {
     flex-direction: row-reverse;
-    margin-right: 2em;
+    margin-right: 1em;
     display: flex;
 }
 .back {
     display: none;
 }
-.homebottom {
+.bottomhome {
     font-size: 10px;
     font-weight: bold;
     padding-right: 2em;
     display: inline;
 }
-.portfoliobottom {
-font-size: 10px;
-font-weight: bold;
-padding-right: 1em;
-display: inline;
+.bottomportfolio {
+    font-size: 10px;
+    font-weight: bold;
+    padding-right: 1em;
+    display: inline;
 }
-.main-footer {
+.footer-one {
     height: 400px;
 }
-.contactbottom {
+.bottomcontact {
     font-size: 10px;
     font-weight: bold;
     display: inline;
 }
 .name {
     color: black;
+    text-align: center;
     padding-top: 2.5px;
+    font-size: 16px;
 }
 .bottomone {
     margin-left: 12em;
     font-size: 14px;
 }
+
 .bottomtwo {
     margin-left: 12em;
     font-size: 14px;
 }
 p {
-    font-size: 12px;
+    font-size: 18px;
     width: 22.5em;
-    margin-left: .5em;
     padding-bottom: 2em;
+
+body {
+    margin: 50px 0;
+}
+.intro-item {
+    
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+#portfolio,
+#skills {
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+#intro p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+
+
+ul.footer-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1em;
+}
+
+.footer-nav-item a {
+    padding: 0.75rem;
+    align-self: center;
+}
+
+#to-top {
+    display: none;
+
+}
+.banner {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
  /* ======================================
  Media Querie 2
     ====================================== */
 
 @media screen and (min-width: 1024px) {
-    .col {
-        margin-left: 1.5em;
-        flex-basis: calc(33.333% - 20px);
+.banner {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
+    
+
 h1 {
-    margin-bottom: -1.6em;
-    text-align: left;
+    margin-bottom: 1.6em;
+   
 }
+.main-nav {
+    margin: 0;
+}
+
 .resize {
     margin-bottom: 2em;
     margin-right: .5em;
 }
 .intro {
-    margin-left: 0;
     font-size: 18px;
 }
 h5 {
@@ -297,32 +492,35 @@ h5 {
     padding-top: 3em;
     color: black;
 }
-nav {
-    margin-right: -.3em;
-    text-align: right;
+
 }
 img {
     width: 18em;
     margin: 0;
 }
+.name {
+    flex: 0 0 auto;
+}
 .travelcalc {
-    margin-left: -2px;
+    margin-left: 2px;
 }
 .searchphoto {
-    margin-left: -2px;
+    margin-left: 2px;
 }
 .container {
-    margin: 0 0 0 -.2em;
+    margin: 0 0 0 .2em;
     padding: 0;
 }
 p {
     padding-left: 1.3em;
     padding-right: 1.3em;
-    margin-left: -.5em;
+    margin-left: .5em;
 }
-.bp {
-    margin-left: 8em;
+.wrapper {
+    max-width: 1200px;
+    margin: 3vw;
 }
+
 body {
     border: rgb(238, 238, 238) 16px solid;
 }
@@ -339,4 +537,11 @@ body {
     margin-left: 12em;
 }
 
+img {
+    padding-right: 2em;
+    padding-left: 2em;
+    width: 100%;
 
+.to-top {
+        display: none;
+    }
