@@ -18,7 +18,7 @@ li.nav-item {
     font-family: "Source Sans Pro", sans-serif;
     text-align: center;
     color: black;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 main {
@@ -36,10 +36,14 @@ h2 {
 }
 
 header,
-section,
-#intro {
+section, {
     margin: 0 1rem;
     color: black;
+}
+
+#intro {
+    margin: 0 1rem;
+    color: gray;
 }
 
 footer {
@@ -144,6 +148,15 @@ nav {
     color: black;
 }
 
+ul.header-nav {
+    text-align: center;
+    padding-inline-start: 0;
+}
+
+p.intro-item {
+    color: gray;
+}
+
 /* ---- Media Queries ---- */
 @media screen and (min-width: 768px) {
 body {
@@ -164,6 +177,11 @@ body {
 
 .intro-item {
     margin: 0 0.4rem;
+    color: black;
+}
+
+p.intro-item {
+    color: black;
 }
 
 #intro img {
@@ -194,7 +212,8 @@ body {
 }
 
 .contact-invite {
-    padding: 1 18vw 2vw;
+    padding: 0 12vw 4vw;
+    margin: 5%;
 }
 
 .page,
@@ -231,7 +250,7 @@ nav {
     align-items: center;
 }
 
-.to-top {
+.back-to-top {
     display: none;
 }
 
@@ -247,6 +266,10 @@ ul.footer-nav {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+}
+
+p.intro-item {
+    color: black;
 }
 
 body {
@@ -279,7 +302,7 @@ main {
     flex-basis: 30%;
 }
 
-.to-top {
+.back-to-top {
     display: none;
 }
 
@@ -297,3 +320,8 @@ ul.footer-nav {
     margin: 2vw;
     max-width: 1100px;
     }
+
+.contact-invite {
+    padding: 0 20vw 4vw;
+    margin: 5%;
+}
