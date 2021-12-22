@@ -89,6 +89,15 @@ img.profile-image {
     max-width: 60%;
 }
 
+#intro-item {
+    flex-direction: row-reverse;
+}
+
+.intro {
+    flex-direction: row-reverse;
+
+}
+
 body,
 #intro,
 #portfolio,
@@ -133,6 +142,7 @@ ul.footer-nav {
 
 #portfolio {
     border-bottom: 1px dashed rgb(243, 233, 233);
+    font-family: 'Open Sans', sans-serif;
 }
 
 #contact-info {
@@ -169,6 +179,10 @@ body {
     color: black;
 }
 
+div#intro.container {
+    flex-direction: row-reverse;
+}
+
 .name {
     text-align: center;
     font-size: 2em;
@@ -178,6 +192,7 @@ body {
 .intro-item {
     margin: 0 0.4rem;
     color: black;
+    flex-direction: row-reverse;
 }
 
 p.intro-item {
@@ -197,9 +212,12 @@ p.intro-item {
     font-size: 1.3rem;
 }
 
-#portfolio p,
-#skills p {
+#portfolio p {
     padding: 0 2rem;
+}
+
+#skill p {
+    padding: 0 1rem;
 }
 
 #skills,
@@ -264,9 +282,14 @@ ul.footer-nav {
 }
 
 #skills,
-#portfolio,
 #intro {
     flex-direction: row;
+    margin: 2rem;
+}
+
+#portfolio {
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
 }
 
 }
@@ -278,6 +301,10 @@ ul.footer-nav {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+}
+
+#portfolio {
+    font-family: 'Open Sans', sans-serif;
 }
 
 p.intro-item {
