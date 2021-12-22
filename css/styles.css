@@ -79,14 +79,14 @@ header p,
     margin-bottom: 25%;
 }
 
-.page:last-child,
-.skill:last-child {
-    padding-bottom: 4rem;
+.skill:last-child,
+.page:last-child {
+    padding-bottom: 3rem;
     margin-bottom: 0;
 }
 
 img.profile-image {
-    max-width: 70%;
+    max-width: 60%;
 }
 
 body,
@@ -165,13 +165,8 @@ p.intro-item {
 /* ---- Media Queries ---- */
 @media screen and (min-width: 768px) {
 body {
-    margin: 50px 0;
-}
-
-#intro,
-#portfolio,
-#skills {
-    flex-direction: row;
+    margin: 40px 0;
+    color: black;
 }
 
 .name {
@@ -190,11 +185,7 @@ p.intro-item {
 }
 
 #intro img {
-    max-width: 40%;
-}
-
-.skill {
-    max-width: 50vw;
+    max-width: 30%;
 }
 
 .skill img {
@@ -211,9 +202,10 @@ p.intro-item {
     padding: 0 2rem;
 }
 
-#portfolio,
-#skills {
+#skills,
+#portfolio {
     flex-wrap: wrap;
+    color: black;
 }
 
 .invite {
@@ -246,6 +238,10 @@ nav {
     text-align: center;
 }
 
+.skill {
+    max-width: 45vw;
+}
+
 .footer-nav-item a {
     align-self: center;
     padding: 0.5rem;
@@ -265,6 +261,12 @@ ul.footer-nav {
 
 ul.footer-nav {
     list-style: none;
+}
+
+#skills,
+#portfolio,
+#intro {
+    flex-direction: row;
 }
 
 }
@@ -309,7 +311,7 @@ main {
 
 .page,
 .skill {
-    flex-basis: 30%;
+    flex-basis: 25%;
 }
 
 .back-to-top {
@@ -333,4 +335,9 @@ ul.footer-nav {
     padding: 0 12vw 3vw;
     margin: 5%;
 }
+
+#intro img {
+    max-width: 50%;
+}
+
 }
