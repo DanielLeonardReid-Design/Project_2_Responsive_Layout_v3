@@ -103,8 +103,8 @@ header p {
     padding-bottom: 3rem;
 }
 
-img.profile-image {
-    max-width: 60%;
+img.portfolio-img {
+    max-width: 80%;
 }
 
 #figure-intro {
@@ -228,6 +228,11 @@ body {
     padding: 0 0rem;
 }
 
+#intro img,
+img.portfolio-img {
+    max-width: 30%;
+}
+
 a {
     flex: 1;
     text-decoration: none;
@@ -265,7 +270,7 @@ p.figure-intro {
 }
 
 #intro img {
-    max-width: 30%;
+    max-width: 40%;
 }
 
 #intro p {
@@ -321,7 +326,7 @@ nav {
     text-align: center;
 }
 
-.footer-menu-item a {
+.footer-menu-links a {
     align-self: center;
     padding: 0.5rem;
 }
@@ -367,6 +372,8 @@ div.skills-list {
 .skills {
     flex-direction: row;
     flex-basis: 5%;
+}
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -442,7 +449,6 @@ ul.footer-menu {
     list-style: none;
 }
 
-
 .invite {
     padding: 0 12vw 3vw;
     margin: 5%;
@@ -464,7 +470,6 @@ ul.footer-menu {
     font-size: 1em;
 }
 
-
 h4 {
     font-family: "source sans pro", sans-serif;
     font-size: 1.2rem;
@@ -475,4 +480,6 @@ h4 {
     color: black;
     text-align: center;
  
+}
+
 }
