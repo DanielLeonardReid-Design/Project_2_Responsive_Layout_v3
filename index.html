@@ -17,9 +17,10 @@
     <header id="home" class="home-header">
     <div class="menu">
     <h1 class="name"><a href="#">Daniel L. Reid</a></h1>
-    <nav class="top-nav">
+    <nav id="home-nav" class="top-nav">
         <ul class="header-ul">
             <li class="menu-item"><a href="#">HOME</a></li>
+            <li class="menu-item"><a href="#skills">SKILLS</a></li>
             <li class="menu-item"><a href="#portfolio">PORTFOLIO</a></li>
             <li class="menu-item"><a href="#contact-info">CONTACT</a></li>
         </ul>
@@ -27,70 +28,111 @@
     </div>
 
     <div class="figure" id="intro">
-    <img class="profile-image figure-item" src="images/responsive-layout-profile.png" alt="profile photo">
-    <p class="figure-item">
+    <img class="profile-image figure-intro" src="images/responsive-layout-profile.png" alt="profile photo">
+    <p class="figure-intro">
             Hi! I'm a front-end developer who loves responsive design and css.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!  Here are some of the projects that I built.</p>
     </div>
+
     </header>
 
-    <main>
+    <main class="wrap">
+    <section class="figure" id="skills">
+
+        <h2><b>SKILLS</b></h2>
+        <div id="skill-section" class="skills-list">
+            <h4>HTML</h4>
+            <img class="skills-image" src="images/html5.png" style="width:200px;height:200px;" alt="HTML Icon Image" />
+            <!-- <cite><a href="https://www.freepnglogos.com/pics/html5-logo">Html5 Logo from freepnglogos.com</a></cite> -->
+
+            <h4>CSS</h4>
+            <img class="skills-image" src="images/CSS.png" style="width:200px;height:200px;" alt="CSS Icon Image" />
+            <!-- <cite><a href="https://www.freepnglogos.com/pics/html5-logo">Html5 Logo from freepnglogos.com</a></cite> -->
+
+            <h4>Javascript</h4>
+            <img class="skills-image" src="images/javascript.png" style="width:200px;height:200px;" alt="Javascript Icon Image" />
+            <!-- <cite><a href="https://www.freepnglogos.com/pics/javascript">Javascript from freepnglogos.com</a></cite> -->
+
+            <h4>Python</h4>
+            <img class="skills-image" src="images/python.png" style="width:200px;height:200px;" alt="Python Icon Image" />
+            <!-- <cite img> https://www.freepnglogos.com/search.php?q=html</cite img> -->
+
+            <!--  ** Add to portfolio later **
+            <h4>Wireshark</h4>
+            <img class="skills-image" src="images/wireshark.png" alt="Wireshark Icon Image" />
+             <cite img> https://www.freepnglogos.com/search.php?q=html</cite img> 
+
+            <h4>Nmap</h4>
+            <img class="skills-image" src="images/Nmap.png" alt="Nmap Icon Image" />
+             <cite img> https://www.freepnglogos.com/search.php?q=html</cite img> 
+
+            <h4>AWS Lightsail</h4>
+            <img class="skills-image" src="images/AWS_lightsail.png" alt="AWS Lightsail Icon Image" />
+             <cite img> https://www.freepnglogos.com/search.php?q=html</cite img> 
+            -->
+        </div>
+    </section>
+
     <section class="figure" id="portfolio">
         <h2><b>PORTFOLIO</b></h2>
+        
         <div class="page">
-        <img class="portfolio-image" src="images/portfolio-1.png" alt="portfolio pic 1: Marketing Page"/>
+        <img src="images/portfolio-1.png" alt="portfolio pic 1: Marketing Page"/>
         <h3><b>MARKETING PAGE</b></h3>
         <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
         </div>
 
         <div class="page">
-        <img class="portfolio-image" src="images/portfolio-2.png" alt="portfolio pic 2: Search Page"/>
+        <img src="images/portfolio-2.png" alt="portfolio pic 2: Search Page"/>
         <h3><b>SEARCH PAGE</b></h3>
         <p>This project searches through a specific database to find information that the user is trying to look up.</p>
         </div>
 
         <div class="page">
-        <img class="portfolio-image" src="images/portfolio-3.png" alt="portfolio pic 3: Travel App"/>
+        <img src="images/portfolio-3.png" alt="portfolio pic 3: Travel App"/>
+        <!--cite>Daniel Reid Photo Library: "London, England - St. Paul's Cathedral View"</cite>-->
         <h3><b>TRAVEL APP</b></h3>
         <p>This project compares travel times based on different transportation methods and tells you the best one.</p> 
         </div>
 
         <div class="page">
-        <img class="portfolio-image" src="images/portfolio-4.png" alt="portfolio pic 4: Map of Favorite Spots"/>
+        <img src="images/portfolio-4.png" alt="portfolio pic 4: Map of Favorite Spots: Rockport"/>
+        <!--cite>Daniel Reid Photo Library: "Rockport, MA - The Headlands"</cite>-->
         <h3><b>MAP OF FAVORITE SPOTS</b></h3>
         <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour. </p>
         </div>
 
         <div class="page">
-        <img class="portfolio-image" src="images/portfolio-5.png" alt="portfolio pic 5: Photo Gallery"/>
+        <img src="images/portfolio-5.png" alt="portfolio pic 5: Photo Gallery"/>
         <h3><b>PHOTO GALLERY</b></h3>
         <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
         </div>
 
         <div class="page">
-        <img class="portfolio-image" src="images/portfolio-6.png" alt="portfolio pic 6: Calculator"/>
+        <img src="images/portfolio-6.png" alt="portfolio pic 6: Calculator"/>
         <h3><b>CALCULATOR</b></h3>
         <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-
         </div>
 
     </section>
     </main>
 
-
     <footer class="main-footer">
     <section class="figure" id="contact-info">
-        <h6 class="footer-title">CONTACT</h6>
-        <p class="invite">If you're interested in chatting or want more information about what I've been working on. I'd love to hear from you!</p>
+        <h2 class="footer-title">CONTACT</h2>
+        <div class="figure-background">
+        <p class="invite">If you're interested in more information about what I've been working on. I'd love to hear from you!</p>
         <br>
-        <p class="contact-data"><u>Phone:</u><span><strong> 1.978.500.0583</strong></span></p>
-        <p class="contact-data"><u>Email:</u><span><strong>  Danreid153@protonmail.com</strong></span></p>
+        <p class="contact-data"><u>Phone:</u><strong> 1.978.500.0583</strong></p>
+        <p class="contact-data"><u>Email:</u><strong>  Danreid153@protonmail.com</strong></p>
+        </div>
     </section>
 
     <div class="figure" id="bottom-menu">
         <p class="name-link"><a href="#">Daniel L. Reid</a></p>
-        <nav class="nav-2">
+        <nav id="footer-nav-2" class="nav-2">
             <ul class="footer-menu">
             <li class="footer-menu-item"><a href="#" style="text-decoration: none;">HOME</a></li>
+            <li class="footer-menu-item"><a href="#skills">SKILLS</a></li>
             <li class="footer-menu-item"><a href="#portfolio">PORTFOLIO</a></li>
             <li class="footer-menu-item"><a href="#contact-info">CONTACT</a></li>
             </ul>

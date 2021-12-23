@@ -10,42 +10,54 @@ body {
     background-color: whitesmoke;
     text-align: center;
     padding: 0 1rem;
-
 }
 
-h6 {
-    font-family: "source sans pro", sans-serif;
-    text-align: center;
-    color: gray;
-    font-weight: 700;
-    font-size: 1.2em;
-}
-
-h1,
-h3,
-li.menu-item {
-    font-family: "Source Sans Pro", sans-serif;
+h1  {
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     color: black;
     font-weight: 800;
+}
+
+
+li.menu-item {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+}
+
+h3 {
+    font-family: 'Roboto mono', sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 main {
     background-color: rgb(250, 246, 246);
 }
 
+
 h2 {
     font-size: 1.3rem;
     width: 100%;
-    margin: auto;
-    padding: 3rem;
+    padding: 1rem;
+    margin: 0%;
+    margin-top: 10%;
+    margin-bottom: 2%;
     font-weight: 600;
-    color: black;
+    color: silver;
+    background-color: navy;
     text-align: center;
+    font-family: 'Roboto mono', sans-serif;
 }
 
+
 header,
-section, {
+section {
     margin: 0 1rem;
     color: black;
 }
@@ -73,35 +85,29 @@ a {
     color: black;
 }
 
-span {
-    display: inline-block;
-    margin: 0 1rem;
-}
-
 #contact-info {
     color: gray;
 }
 
-header p, {
+header p {
     color: black;
 }
 
 .page,
-.skill {
+.skills-list {
     margin-bottom: 25%;
 }
 
-.skill:last-child,
 .page:last-child {
-    padding-bottom: 3rem;
     margin-bottom: 0;
+    padding-bottom: 3rem;
 }
 
 img.profile-image {
     max-width: 60%;
 }
 
-#figure-item {
+#figure-intro {
     flex-direction: row-reverse;
 }
 
@@ -110,19 +116,20 @@ img.profile-image {
 
 }
 
-body,
-#intro,
-#portfolio,
 #skills,
-ul.header-ul,
+#intro,
+#bottom-menu,
+body,
 li.menu-item,
-#bottom-menu {
-    display: flex;
+ul.header-ul,
+#portfolio {
     justify-content: center;
+    display: flex;
 }
 
+
 ul.header-ul,
-.figure {
+.figure  {
     flex-direction: column;
 }
 
@@ -152,7 +159,8 @@ ul.footer-menu {
     margin: 0;
 }
 
-#portfolio {
+#portfolio,
+#skills {
     border-bottom: 1px dashed rgb(243, 233, 233);
     font-family: 'Open Sans', sans-serif;
 }
@@ -162,8 +170,12 @@ ul.footer-menu {
     padding-bottom: 3rem;
 }
 
-.skill img {
-    max-width: 40vw;
+li.menu-item {
+    background-color: rgb(192, 192, 245);
+}
+
+.top-nav {
+    background-color: whitesmoke;
 }
 
 nav {
@@ -175,7 +187,7 @@ ul.header-ul {
     padding-inline-start: 0;
 }
 
-p.figure-item {
+p.figure-intro {
     color: gray;
 }
 
@@ -184,25 +196,29 @@ p.figure-item {
     text-align: center;
 }
 
+#skills p,
 #portfolio p {
-    padding: 0 2rem;
     font-size: 1rem;
+    padding: 0 1rem;
 }
 
 .contact-data {
     text-align: left;
-    padding: 0 10vw 2vw;
+    padding: 0 4vw 0vw;
     font-size: 0.8em;
 }
 
 .footer-title {
-    color: black;
     margin: 10px 0;
 }
 
 li.menu-item {
     padding: 0.5rem;
     }
+
+h4 {
+    display: none;
+}
 
 /* ---- Media Queries ---- */
 @media screen and (min-width: 768px) {
@@ -212,6 +228,14 @@ body {
     padding: 0 0rem;
 }
 
+a {
+    flex: 1;
+    text-decoration: none;
+    padding: 0.25rem 0;
+    color: black;
+}
+
+
 div#intro.figure {
     flex-direction: row-reverse;
     margin-right: 2rem;
@@ -220,28 +244,28 @@ div#intro.figure {
     margin-bottom: 0rem;
 }
 
+.top-nav {
+    background-color: whitesmoke;
+}
+
 .name {
     text-align: center;
     font-size: 2em;
     margin: .75em;
 }
 
-.figure-item {
+.figure-intro {
     margin: 0 0.4rem;
     color: black;
     flex-direction: row-reverse;
 }
 
-p.figure-item {
+p.figure-intro {
     color: black;
 }
 
 #intro img {
     max-width: 30%;
-}
-
-.skill img {
-    max-width: 30vw;
 }
 
 #intro p {
@@ -253,16 +277,12 @@ p.figure-item {
     padding: 1rem 0;
 }
 
+#skills p,
 #portfolio p {
-    padding: 0 2rem;
     font-size: 1rem;
-}
-
-#skill p {
     padding: 0 1rem;
 }
 
-#skills,
 #portfolio {
     flex-wrap: wrap;
     color: black;
@@ -274,7 +294,7 @@ p.figure-item {
 }
 
 .page,
-.skill {
+.skills-list {
     margin: 0 0.4rem 3rem;
     flex: 1 40%;
 }
@@ -289,7 +309,9 @@ ul.header-ul {
     justify-content: space-around;
 }
 
-li.menu-item {
+li.menu-item,
+ul.header-ul,
+.home-nav  {
     background-color: whitesmoke;
     padding: 0.1rem;
 }
@@ -297,10 +319,6 @@ li.menu-item {
 nav {
     color: black;
     text-align: center;
-}
-
-.skill {
-    max-width: 45vw;
 }
 
 .footer-menu-item a {
@@ -324,13 +342,12 @@ ul.footer-menu {
     list-style: none;
 }
 
-#skills,
 #intro {
     flex-direction: row;
     margin: 2rem;
 }
 
-#portfolio {
+#portfolio  {
     flex-direction: row;
     font-family: 'Open Sans', sans-serif;
     margin: 2rem;
@@ -341,6 +358,15 @@ ul.footer-menu {
     padding: 0 28vw 1vw;
 }
 
+div.skills-list {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 5%;
+}
+
+.skills {
+    flex-direction: row;
+    flex-basis: 5%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -352,11 +378,24 @@ ul.footer-menu {
     flex-direction: row;
 }
 
-#portfolio {
+li.menu-item,
+div.menu,
+nav#home-nav.top,
+ul.header-ul,
+.top-nav {
+    background-color: rgb(192, 192, 245);
+}
+
+
+#portfolio  {
     font-family: 'Open Sans', sans-serif;
 }
 
-p.figure-item {
+.wrap {
+    font-family: 'Roboto', sans-serif;
+}
+
+p.figure-intro {
     color: black;
 }
 
@@ -381,22 +420,23 @@ main {
     flex: 0 0 auto;
 }
 
-.skill img {
+.skill-list img {
     max-width: 20vw;
 }
 
 .page,
-.skill {
+.skills-list {
     flex-basis: 25%;
+}
+
+.skill-list {
+    flex-basis: 5%;
+    flex-direction: row;
 }
 
 .back-to-top {
     display: none;
 }
-
-li.menu-item {
-    background-color: white;
-    }
 
 ul.footer-menu {
     list-style: none;
@@ -412,7 +452,8 @@ ul.footer-menu {
     max-width: 50%;
 }
 
-#portfolio p {
+#portfolio p,
+#skills p  {
     padding: 0 1rem;
     font-size: 1rem;
 }
@@ -423,8 +464,15 @@ ul.footer-menu {
     font-size: 1em;
 }
 
-.footer-title {
-    color: black;
-}
 
+h4 {
+    font-family: "source sans pro", sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: auto;
+    padding: 3rem;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+ 
 }
