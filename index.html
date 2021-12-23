@@ -2,114 +2,104 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Treehouse Project 2: Responsive Layout</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+
 </head>
 
-
 <body>
-
-<div class="wrapper">
-
-<header class="main-header">
+    <div id="main-wrapper" class="body-wrapper">
+    <header id="home" class="home-header">
     <div class="menu">
-
     <h1 class="name"><a href="#">Daniel L. Reid</a></h1>
-    <nav class="main-nav">
-            <ul class="header-nav">
-            <li class="nav-item"><a href="#">HOME</a></li>
-            <li class="nav-item"><a href="#portfolio">PORTFOLIO</a></li>
-            <li class="nav-item"><a href="#contact">CONTACT</a></li>
-            </ul>
-            </nav>
+    <nav class="top-nav">
+        <ul class="header-ul">
+            <li class="menu-item"><a href="#">HOME</a></li>
+            <li class="menu-item"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="menu-item"><a href="#contact-info">CONTACT</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <div class="figure" id="intro">
+    <img class="profile-image figure-item" src="images/responsive-layout-profile.png" alt="profile photo">
+    <p class="figure-item">
+            Hi! I'm a front-end developer who loves responsive design and css.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!  Here are some of the projects that I built.</p>
+    </div>
+    </header>
+
+    <main>
+    <section class="figure" id="portfolio">
+        <h2><b>PORTFOLIO</b></h2>
+        <div class="page">
+        <img class="portfolio-image" src="images/portfolio-1.png" alt="portfolio pic 1: Marketing Page"/>
+        <h3><b>MARKETING PAGE</b></h3>
+        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
         </div>
 
-<div id="intro" class="container">
-<img class="profile-image intro-item" src="images/responsive-layout-profile.png" alt="profile photo">
+        <div class="page">
+        <img class="portfolio-image" src="images/portfolio-2.png" alt="portfolio pic 2: Search Page"/>
+        <h3><b>SEARCH PAGE</b></h3>
+        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+        </div>
 
-<p class="intro-item">
-    Hi! I'm a front-end developer who loves responsive design and css.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!  Here are some of the projects that I built.
-</p>
-</div>
-</header>
+        <div class="page">
+        <img class="portfolio-image" src="images/portfolio-3.png" alt="portfolio pic 3: Travel App"/>
+        <h3><b>TRAVEL APP</b></h3>
+        <p>This project compares travel times based on different transportation methods and tells you the best one.</p> 
+        </div>
 
+        <div class="page">
+        <img class="portfolio-image" src="images/portfolio-4.png" alt="portfolio pic 4: Map of Favorite Spots"/>
+        <h3><b>MAP OF FAVORITE SPOTS</b></h3>
+        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour. </p>
+        </div>
 
-<main>
-<section id="portfolio" class="container">
+        <div class="page">
+        <img class="portfolio-image" src="images/portfolio-5.png" alt="portfolio pic 5: Photo Gallery"/>
+        <h3><b>PHOTO GALLERY</b></h3>
+        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+        </div>
 
-    <h2><b>PORTFOLIO</b></h2>
-    <div class="page">
-    <img class="portfolio-image" src="images/portfolio-1.png" alt="portfolio pic 1: Marketing Page"/>
-    <h3><b>MARKETING PAGE</b></h3>
-    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in</p>
-    </div>
+        <div class="page">
+        <img class="portfolio-image" src="images/portfolio-6.png" alt="portfolio pic 6: Calculator"/>
+        <h3><b>CALCULATOR</b></h3>
+        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
 
-    <div class="page">
-    <img class="portfolio-image" src="images/portfolio-2.png" alt="portfolio pic 2: Search Page"/>
-    <h3><b>SEARCH PAGE</b></h3>
-    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-    </div>
+        </div>
 
-    <div class="page">
-    <img class="portfolio-image" src="images/portfolio-3.png" alt="portfolio pic 3: Travel App"/>
-    <h3><b>TRAVEL APP</b></h3>
-    <p>This project compares travel times based on different transportation methods and tells you the best one.</p> 
-    </div>
-
-    <div class="page">
-    <img class="portfolio-image" src="images/portfolio-4.png" alt="portfolio pic 4: Map of Favorite Spots"/>
-    <h3><b>MAP OF FAVORITE SPOTS</b></h3>
-    <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour. </p>
-    </div>
-
-    <div class="page">
-    <img class="portfolio-image" src="images/portfolio-5.png" alt="portfolio pic 5: Photo Gallery"/>
-    <h3><b>PHOTO GALLERY</b></h3>
-    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-    </div>
-
-    <div class="page">
-    <img class="portfolio-image" src="images/portfolio-6.png" alt="portfolio pic 6: Calculator"/>
-    <h3><b>CALCULATOR</b></h3>
-    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-
-    </div>
-</section>
-
-</main>
+    </section>
+    </main>
 
 
-<footer class="main-footer">
-    <section id="contact-info" class="container">
-        <h3>CONTACT</h3>
-    
+    <footer class="main-footer">
+    <section class="figure" id="contact-info">
+        <h6 class="footer-title">CONTACT</h6>
         <p class="invite">If you're interested in chatting or want more information about what I've been working on. I'd love to hear from you!</p>
         <br>
-    
-        <p><u>Phone:</u><span><strong> 1.978.500.0583</strong></span></p>
-        <p><u>Email:</u><span><strong>  Danreid153@protonmail.com</strong></span></p>
+        <p class="contact-data"><u>Phone:</u><span><strong> 1.978.500.0583</strong></span></p>
+        <p class="contact-data"><u>Email:</u><span><strong>  Danreid153@protonmail.com</strong></span></p>
     </section>
 
-    <div id="bottom-nav" class="container">
-        <p>Daniel L. Reid</p>
-
-       
-    <nav class="nav-2">
-         <ul class="footer-nav">
-            <li class="footer-nav-item"><a href="#" style="text-decoration: none;">HOME</a></li>
-            <li class="footer-nav-item"><a href="#portfolio">PORTFOLIO</a></li>
-            <li class="footer-nav-item"><a href="#contact">CONTACT</a></li>
-          </ul>
+    <div class="figure" id="bottom-menu">
+        <p class="name-link"><a href="#">Daniel L. Reid</a></p>
+        <nav class="nav-2">
+            <ul class="footer-menu">
+            <li class="footer-menu-item"><a href="#" style="text-decoration: none;">HOME</a></li>
+            <li class="footer-menu-item"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="footer-menu-item"><a href="#contact-info">CONTACT</a></li>
+            </ul>
         </nav>
         <p class="back-to-top"><a href="#">BACK TO TOP</a></p>
 
-        </div>
-        </footer>
-        </div>
+    </div>
+    </footer>
+    </div>
  </body>
  </html>
 

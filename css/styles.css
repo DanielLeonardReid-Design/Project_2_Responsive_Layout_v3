@@ -9,12 +9,21 @@ body {
     font-size: 1.2em;
     background-color: whitesmoke;
     text-align: center;
+    padding: 0 1rem;
 
+}
+
+h6 {
+    font-family: "source sans pro", sans-serif;
+    text-align: center;
+    color: gray;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 h1,
 h3,
-li.nav-item {
+li.menu-item {
     font-family: "Source Sans Pro", sans-serif;
     text-align: center;
     color: black;
@@ -69,8 +78,11 @@ span {
     margin: 0 1rem;
 }
 
-header p,
-#contact-info p {
+#contact-info {
+    color: gray;
+}
+
+header p, {
     color: black;
 }
 
@@ -89,7 +101,7 @@ img.profile-image {
     max-width: 60%;
 }
 
-#intro-item {
+#figure-item {
     flex-direction: row-reverse;
 }
 
@@ -102,36 +114,36 @@ body,
 #intro,
 #portfolio,
 #skills,
-ul.header-nav,
-li.nav-item,
-#bottom-nav {
+ul.header-ul,
+li.menu-item,
+#bottom-menu {
     display: flex;
     justify-content: center;
 }
 
-ul.header-nav,
-.container {
+ul.header-ul,
+.figure {
     flex-direction: column;
 }
 
-li.nav-item,
-#bottom-nav {
+li.menu-item,
+#bottom-menu {
     margin: 0.15rem 0;
     font-size: 1rem;
     font-weight: 700;
 }
 
-li.nav-item {
+li.menu-item {
     background: white;
 }
 
-#bottom-nav {
+#bottom-menu {
     flex-direction: row;
     justify-content: space-between;
     margin: 0.5rem 1rem;
 }
 
-ul.footer-nav {
+ul.footer-menu {
     display: none;
 }
 
@@ -158,29 +170,54 @@ nav {
     color: black;
 }
 
-ul.header-nav {
+ul.header-ul {
     text-align: center;
     padding-inline-start: 0;
 }
 
-p.intro-item {
+p.figure-item {
     color: gray;
 }
 
 .invite {
-    padding: 0 12vw 4vw;
-    margin: 5%;
+    padding: 0 1vw 1vw;
+    text-align: center;
 }
+
+#portfolio p {
+    padding: 0 2rem;
+    font-size: 1rem;
+}
+
+.contact-data {
+    text-align: left;
+    padding: 0 10vw 2vw;
+    font-size: 0.8em;
+}
+
+.footer-title {
+    color: black;
+    margin: 10px 0;
+}
+
+li.menu-item {
+    padding: 0.5rem;
+    }
 
 /* ---- Media Queries ---- */
 @media screen and (min-width: 768px) {
 body {
     margin: 40px 0;
     color: black;
+    padding: 0 0rem;
 }
 
-div#intro.container {
+div#intro.figure {
     flex-direction: row-reverse;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 
 .name {
@@ -189,13 +226,13 @@ div#intro.container {
     margin: .75em;
 }
 
-.intro-item {
+.figure-item {
     margin: 0 0.4rem;
     color: black;
     flex-direction: row-reverse;
 }
 
-p.intro-item {
+p.figure-item {
     color: black;
 }
 
@@ -212,8 +249,13 @@ p.intro-item {
     font-size: 1.3rem;
 }
 
+#intro {
+    padding: 1rem 0;
+}
+
 #portfolio p {
     padding: 0 2rem;
+    font-size: 1rem;
 }
 
 #skill p {
@@ -237,18 +279,19 @@ p.intro-item {
     flex: 1 40%;
 }
 
-.main-nav {
+.top-nav {
     margin: 0 25%;
     align-items: center;
     }
 
-ul.header-nav {
+ul.header-ul {
     flex-direction: row;
     justify-content: space-around;
 }
 
-li.nav-item {
+li.menu-item {
     background-color: whitesmoke;
+    padding: 0.1rem;
 }
 
 nav {
@@ -260,12 +303,12 @@ nav {
     max-width: 45vw;
 }
 
-.footer-nav-item a {
+.footer-menu-item a {
     align-self: center;
     padding: 0.5rem;
 }
 
-#bottom-nav {
+#bottom-menu {
     align-items: center;
 }
 
@@ -273,11 +316,11 @@ nav {
     display: none;
 }
 
-ul.footer-nav {
+ul.footer-menu {
     display: flex;
 }
 
-ul.footer-nav {
+ul.footer-menu {
     list-style: none;
 }
 
@@ -290,6 +333,12 @@ ul.footer-nav {
 #portfolio {
     flex-direction: row;
     font-family: 'Open Sans', sans-serif;
+    margin: 2rem;
+}
+
+.contact-data {
+    text-align: left;
+    padding: 0 28vw 1vw;
 }
 
 }
@@ -307,7 +356,7 @@ ul.footer-nav {
     font-family: 'Open Sans', sans-serif;
 }
 
-p.intro-item {
+p.figure-item {
     color: black;
 }
 
@@ -321,11 +370,11 @@ main {
     background-color: white;
 }
 
-.main-nav {
+.top-nav {
     margin: 0;
 }
 
-.header-nav a {
+.header-ul a {
     padding: 16px;
 }
 .name {
@@ -345,18 +394,14 @@ main {
     display: none;
 }
 
-li.nav-item {
+li.menu-item {
     background-color: white;
     }
 
-ul.footer-nav {
+ul.footer-menu {
     list-style: none;
 }
 
-.wrapper {
-    margin: 2vw;
-    max-width: 1100px;
-}
 
 .invite {
     padding: 0 12vw 3vw;
@@ -365,6 +410,21 @@ ul.footer-nav {
 
 #intro img {
     max-width: 50%;
+}
+
+#portfolio p {
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.contact-data {
+    text-align: left;
+    padding: 0 28vw 2vw;
+    font-size: 1em;
+}
+
+.footer-title {
+    color: black;
 }
 
 }
