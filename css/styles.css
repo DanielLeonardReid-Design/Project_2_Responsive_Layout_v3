@@ -87,18 +87,29 @@ a {
 
 #contact-info {
     color: gray;
+    padding-bottom: 0%;
 }
 
 header p {
     color: black;
 }
 
-.page,
+.marketing,
+.search,
+.travel,
+.map,
+.photo,
+.calculator,
 .skills-list {
     margin-bottom: 25%;
 }
 
-.page:last-child {
+.marketing:last-child,
+.search:last-child,
+.travel:last-child,
+.map:last-child,
+.photo:last-child,
+.calculator:last-child {
     margin-bottom: 0;
     padding-bottom: 3rem;
 }
@@ -167,7 +178,7 @@ ul.footer-menu {
 
 #contact-info {
     border-bottom: 1px solid rgb(243, 233, 233);
-    padding-bottom: 3rem;
+    padding-bottom: 0%;
 }
 
 li.menu-item {
@@ -192,7 +203,7 @@ p.figure-intro {
 }
 
 .invite {
-    padding: 0 1vw 1vw;
+    padding: 0 2vw 1vw;
     text-align: center;
 }
 
@@ -203,7 +214,7 @@ p.figure-intro {
 }
 
 .contact-data {
-    text-align: left;
+    text-align: center;
     padding: 0 4vw 0vw;
     font-size: 0.8em;
 }
@@ -294,11 +305,16 @@ p.figure-intro {
 }
 
 .invite {
-    padding: 0 12vw 2vw;
+    padding: 0 24vw 2vw;
     margin: 5%;
 }
 
-.page,
+.marketing,
+.search,
+.travel,
+.map,
+.photo,
+.calculator,
 .skills-list {
     margin: 0 0.4rem 3rem;
     flex: 1 40%;
@@ -359,7 +375,7 @@ ul.footer-menu {
 }
 
 .contact-data {
-    text-align: left;
+    text-align: center;
     padding: 0 28vw 1vw;
 }
 
@@ -431,7 +447,12 @@ main {
     max-width: 20vw;
 }
 
-.page,
+.marketing,
+.search,
+.travel,
+.map,
+.photo,
+.calculator,
 .skills-list {
     flex-basis: 25%;
 }
@@ -450,7 +471,7 @@ ul.footer-menu {
 }
 
 .invite {
-    padding: 0 12vw 3vw;
+    padding: 0 24vw 3vw;
     margin: 5%;
 }
 
@@ -465,7 +486,7 @@ ul.footer-menu {
 }
 
 .contact-data {
-    text-align: left;
+    text-align: center;
     padding: 0 28vw 2vw;
     font-size: 1em;
 }
