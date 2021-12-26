@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     line-height: 1.4em;
     font-size: 1.2em;
@@ -85,7 +85,8 @@ a {
     color: black;
 }
 
-#contact-info {
+#contact-info,
+#contact-info-2 {
     color: gray;
     padding-bottom: 0%;
 }
@@ -176,7 +177,8 @@ ul.footer-menu {
     font-family: 'Open Sans', sans-serif;
 }
 
-#contact-info {
+#contact-info,
+#contact-info-2 {
     border-bottom: 1px solid rgb(243, 233, 233);
     padding-bottom: 0%;
 }
@@ -216,6 +218,11 @@ p.figure-intro {
 .contact-data {
     text-align: center;
     padding: 0 4vw 0vw;
+    font-size: 0.8em;
+}
+
+h6 {
+    text-align: center;
     font-size: 0.8em;
 }
 
@@ -415,7 +422,7 @@ ul.header-ul,
 }
 
 .wrap {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto mono', sans-serif;
 }
 
 p.figure-intro {
@@ -423,7 +430,7 @@ p.figure-intro {
 }
 
 body {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: white;
     text-align: center;
 }
@@ -491,8 +498,13 @@ ul.footer-menu {
     font-size: 1em;
 }
 
+h6 {
+    text-align: center;
+    font-size: 1em;
+}
+
 h4 {
-    font-family: "source sans pro", sans-serif;
+    font-family: 'Source sans pro', sans-serif;
     font-size: 1.2rem;
     width: 100%;
     margin: auto;
